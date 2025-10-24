@@ -5,7 +5,7 @@ import cors from "cors";
 import mongoose from "mongoose";
 import connectDB from "./config/db.js";
 
-// ✅ Corrected imports
+// Routes
 import authRoutes from "./routes/authRoutes.js";
 import feedbackRoutes from "./routes/feedbackRoutes.js";
 
@@ -14,29 +14,31 @@ connectDB();
 
 const app = express();
 
-// ✅ Configure CORS correctly
+// CORS configuration
 app.use(
   cors({
     origin: [
-      "http://localhost:5173",
-      "https://fullstack-project-vy2a.onrender.com", // if your frontend is on Render
-      "https://college-event-portal-frontend.vercel.app", // <-- replace this with your actual Vercel frontend
+      "http://localhost:5173", // local frontend
+      "https://fullstack-project-vy2a.onrender.com", // frontend on Render
+      "https://college-event-portal-frontend.vercel.app", // frontend on Vercel
+      "https://fullstack-w9yw.onrender.com", // your backend live link (if needed)
     ],
     credentials: true,
   })
 );
 
+// Body parser
 app.use(express.json());
 
-// ✅ Routes
+// Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/feedback", feedbackRoutes);
 
-// ✅ Root route
+// Root route
 app.get("/", (req, res) => {
   res.send("College Event Portal Backend is running 🚀");
 });
 
-// ✅ Port config
+// Start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
