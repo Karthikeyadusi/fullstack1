@@ -20,8 +20,9 @@ app.use(
     origin: [
       "http://localhost:5173", // local frontend
       "https://fullstack-project-vy2a.onrender.com", // frontend on Render
-      "https://college-event-portal-frontend.vercel.app", // frontend on Vercel
-      "https://fullstack-w9yw.onrender.com", // your backend live link (if needed)
+      "https://college-event-portal-frontend.vercel.app", // previous frontend
+      "https://fullstack-w9yw.onrender.com", // backend live link (optional)
+      "https://fullstack-delta-vert.vercel.app", // NEW frontend link
     ],
     credentials: true,
   })
