@@ -1,0 +1,78 @@
+.feedback-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff);
+  padding: 20px;
+}
+
+.feedback-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.feedback-box h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.feedback-box p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.feedback-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feedback-box label {
+  text-align: left;
+  font-weight: 500;
+  color: #333;
+}
+
+.feedback-box input,
+.feedback-box textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+  transition: 0.3s;
+}
+
+.feedback-box input:focus,
+.feedback-box textarea:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 5px rgba(37, 117, 252, 0.3);
+}
+
+.feedback-box button {
+  background-color: #2575fc;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.feedback-box button:hover {
+  background-color: #1b5edb;
+}
+
+.status-message {
+  margin-top: 15px;
+  font-weight: 500;
+  color: #333;
+}

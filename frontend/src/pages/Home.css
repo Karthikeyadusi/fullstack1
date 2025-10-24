@@ -1,0 +1,103 @@
+/* ---------- Global Styles ---------- */
+.home-container {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #eef2ff, #ffffff, #f5e8ff);
+  color: #222;
+  min-height: 100vh;
+}
+
+/* ---------- Hero Section ---------- */
+.hero-section {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #4f46e5;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  margin-top: 40px;
+}
+
+.btn {
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.btn-primary {
+  background: #4f46e5;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #3b34c4;
+}
+
+.btn-outline {
+  border: 2px solid #4f46e5;
+  color: #4f46e5;
+}
+
+.btn-outline:hover {
+  background: #4f46e5;
+  color: white;
+}
+
+/* ---------- Features Section ---------- */
+.features-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  width: 300px;
+  text-align: center;
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(79, 70, 229, 0.2);
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  text-align: center;
+  padding: 25px;
+  font-size: 0.95rem;
+  color: #555;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  background: #fafafa;
+}
