@@ -7,7 +7,7 @@ import Events from "./pages/Events";
 import Dashboard from "./pages/Dashboard";
 import Register from "./pages/Register";
 import Feedback from "./pages/Feedback";
-import Profile from "./pages/profile";
+import Profile from "./pages/Profile";
 import Signup from "./pages/signup";
 import "./index.css";
 
