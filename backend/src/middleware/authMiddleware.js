@@ -1,3 +1,4 @@
+// authMiddleware.js
 import jwt from "jsonwebtoken";
 import User from "../models/userModel.js";
 
@@ -12,6 +13,16 @@ export const protect = async (req, res, next) => {
     } catch (error) {
       res.status(401).json({ message: "Not authorized, token failed" });
     }
+  } else if (!token) {
+    return res.status(401).json({ message: "No token provided" });
   }
-  if (!token) return res.status(401).json({ message: "No token provided" });
+};
+
+// Admin middleware
+export const admin = (req, res, next) => {
+  if (req.user && req.user.isAdmin) {
+    next();
+  } else {
+    res.status(401).json({ message: "Not authorized as admin" });
+  }
 };
