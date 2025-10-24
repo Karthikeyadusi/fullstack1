@@ -3,7 +3,7 @@ import axios from "axios";
 
 // Create an Axios instance with base URL from environment variable
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL, // Automatically picks local or production URL
+  baseURL: "https://fullstack-w9yw.onrender.com/api", // Automatically picks local or production URL
 });
 
 // Add Authorization header automatically if token exists in localStorage
