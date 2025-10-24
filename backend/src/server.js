@@ -5,9 +5,11 @@ import cors from "cors";
 import mongoose from "mongoose";
 import connectDB from "./config/db.js";
 
+
 // Routes
 import authRoutes from "./routes/authRoutes.js";
 import feedbackRoutes from "./routes/feedbackRoutes.js";
+import eventRoutes from "./routes/eventRoutes.js";
 
 dotenv.config();
 connectDB();
