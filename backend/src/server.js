@@ -34,7 +34,7 @@ app.use(express.json());
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/feedback", feedbackRoutes);
-app.use("/api/events", eventsRoutes);
+app.use("/api/events", eventRoutes);
 
 // Root route
 app.get("/", (req, res) => {
