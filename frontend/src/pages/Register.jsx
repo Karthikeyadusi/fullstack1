@@ -10,7 +10,7 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("https://fullstack1-9ei3.onrender.com/api/auth/register", {
+      const res = await fetch("https://fullstack1-9ei3.onrender.com/api/auth/signupr", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, password }),
