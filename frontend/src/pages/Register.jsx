@@ -17,7 +17,7 @@ const Register = () => {
       });
 
       const data = await res.json();
-
+//added nothing
       if (!res.ok) {
         alert(data.message || "Registration failed");
         return;
